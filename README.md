@@ -1,5 +1,5 @@
 # CDMAD
-Code for the paper entitled "CDMAD: Class-Distribution-Mismatch-Aware Debiasing for Class-Imbalanced Semi-Supervised Learning" (2024 CVPR accepted paper) 
+Code for the paper entitled "CDMAD: Class-Distribution-Mismatch-Aware Debiasing for Class-Imbalanced Semi-Supervised Learning" (2024 CVPR accepted paper, arXiv version available in https://arxiv.org/abs/2403.10391). 
 
 if you want to run fixmatchcdmad.py with 0th gpu , N1 (number of labeled data points belonging to first class = num_max)=1500, M1=3000 , Imbalanced ratio of labeled set as 100, unlabeled set as 100, manualseed as 0, dataset as CIFAR-10:
 
