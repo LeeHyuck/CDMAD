@@ -75,7 +75,6 @@ def train_split(labels, n_labeled_per_class, n_unlabeled_per_class,rand_number):
     np.random.seed(rand_number)
     for i in range(10):
         idxs = np.where(labels == i)[0]
-        #np.random.shuffle(idxs) #Since we brought the experimental results on CIFAR-10 presented in the SAW paper, we do not shuffle idxs for CIFAR-10 as like SAW
         train_labeled_idxs.extend(idxs[:n_labeled_per_class[i]])
         train_unlabeled_idxs.extend(idxs[:n_labeled_per_class[i] + n_unlabeled_per_class[i]])
 
@@ -121,4 +120,4 @@ class CIFAR10_unlabeled(CIFAR10_labeled):
         super(CIFAR10_unlabeled, self).__init__(root, indexs, train=train,
                  transform=transform, target_transform=target_transform,
                  download=download)
-        #self.targets = np.array([-1 for i in range(len(self.targets))])
+        
