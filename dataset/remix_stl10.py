@@ -82,7 +82,6 @@ def train_split(labels, n_labeled_per_class,rand_number):
 
     for i in range(10):
         idxs = np.where(labels == i)[0]
-        #np.random.shuffle(idxs) #Since we brought the experimental results on STL-10 presented in the SAW paper, we do not shuffle idxs for STL-10 as like SAW
         train_labeled_idxs.extend(idxs[:n_labeled_per_class[i]])
 
     return train_labeled_idxs
